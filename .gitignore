@@ -1,0 +1,6 @@
+# CMake
+build/
+
+# Dependencies
+glfw/
+*:Zone.Identifier
