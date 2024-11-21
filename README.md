@@ -4,6 +4,4 @@ This repo contains a simple reusable CMake project structure for building applic
 
 It also comes with a version of GLAD1, which handles loading OpenGL functions based on the platform. The GLAD1 version can be replaced by pulling the desired files from the GLAD1 webserver (more in the instructions).
 
-
-
 Tested only on Windows 11 WSL 2 (Ubuntu 22.04).
