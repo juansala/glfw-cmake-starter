@@ -1,4 +1,4 @@
-# Simple CMake Config for GLFW Applications on WSL 2
+# GLFW CMake Starter
 
 This repo contains a simple reusable CMake project structure for building applications that use the GLFW API for OpenGL. At the moment, it builds GLFW internally and requires a copy of the GLFW source library to be in the project root directory to fully build (details provided in instructions below). 
 
