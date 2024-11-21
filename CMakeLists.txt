@@ -26,12 +26,16 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/glfw)
 add_library(glad ${CMAKE_SOURCE_DIR}/glad/glad.c)
 target_include_directories(glad PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
-# Add test script as executable
+# Add example scripts as executable
 add_executable(glfw_window_example glfw_window_example.cpp)
+add_executable(glfw_triangle_example glfw_triangle_example.cpp)
 
 # Add all the include directories
 target_include_directories(glfw_window_example PUBLIC
                            ${GLFW_SOURCE_DIR}/deps)
+target_include_directories(glfw_triangle_example PUBLIC
+                           ${GLFW_SOURCE_DIR}/deps)
 
 # Link against the dependencies
 target_link_libraries(glfw_window_example glfw glad)
+target_link_libraries(glfw_triangle_example glfw glad)
